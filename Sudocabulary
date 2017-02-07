@@ -6,13 +6,19 @@ print_help_and_exit () {
   exit $1
 }
 
-wordfile=/lnk/D/git/notification-srs/vocab-files/vocab-word-30m.txt
-meaningfile=/lnk/D/git/notification-srs/vocab-files/vocab-meaning-30m.txt
+[[ $1 == "-h" || $1 == "--help" ]] && print_help_and_exit 0
 
-if [[ $1 == "-h" || $1 == "--help" ]]; then print_help_and_exit 0; fi
+if [[ -z ${1+x} ]]; then
+  wordfile=/lnk/D/git/notification-srs/vocab-files/vocab-word-30m.txt
+else
+  wordfile="$1"
+fi
 
-if [[ -z ${1+x} ]]; then; else wordfile="$1"; fi
-if [[ -z ${2+x} ]]; then; else meaningfile="$2"; fi
+if [[ -z ${2+x} ]]; then
+  meaningfile=/lnk/D/git/notification-srs/vocab-files/vocab-meaning-30m.txt
+else
+  meaningfile="$2"
+fi
 
 mapfile -t wordarray < "$wordfile"
 mapfile -t meaningarray < "$meaningfile"
