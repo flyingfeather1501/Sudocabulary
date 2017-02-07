@@ -9,8 +9,10 @@ print_help_and_exit () {
 wordfile=/lnk/D/git/notification-srs/vocab-files/vocab-word-30m.txt
 meaningfile=/lnk/D/git/notification-srs/vocab-files/vocab-meaning-30m.txt
 
-if [[ -z ${1+x} ]]; then print_help_and_exit 1; else wordfile="$1"; fi
-if [[ -z ${2+x} ]]; then print_help_and_exit 1; else meaningfile="$2"; fi
+if [[ $1 == "-h" || $1 == "--help" ]]; then print_help_and_exit 0; fi
+
+if [[ -z ${1+x} ]]; then; else wordfile="$1"; fi
+if [[ -z ${2+x} ]]; then; else meaningfile="$2"; fi
 
 mapfile -t wordarray < "$wordfile"
 mapfile -t meaningarray < "$meaningfile"
