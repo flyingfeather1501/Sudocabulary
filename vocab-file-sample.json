@@ -1,0 +1,16 @@
+{
+    "word" : {
+        "language" : "en",
+        "definitions" : [
+            "definition",
+            "more definitions"
+        ]
+    },
+    "another word" : {
+        "language" : "en",
+        "definitions" : [
+            "another def",
+            "another def"
+        ]
+    }
+}
