@@ -1,18 +1,24 @@
-# Sudocabulary
-Want to combine your love for terminal with the love for learning English Vocabulary? Want a smart way to memorize flash card words for exams like GRE?
+# kisaragi/vocab
 
-Dont look further, just execute this command 
+Kisaragi Hiu's vocabulary app. Forked from [Sudocabulary](https://github.com/badarsh2/Sudocabulary) by [B Adarsh](https://github.com/badarsh2).
 
-    curl https://raw.githubusercontent.com/badarsh2/Sudocabulary/master/script.sh | bash
+## Difference from badarsh2/Sudocabulary
 
-Preview
-------------------
-![Sample Screenshot](https://raw.githubusercontent.com/badarsh2/Sudocabulary/master/sample.png)
+## License
 
-Coming soon!!
-------------------
-Mnemonics for each word for easy remembering!
+```
+   Copyright 2016 B Adarsh
+   Copyright 2017-2018 Kisaragi Hiu
 
-Contributors
-----------
-[B Adarsh](https://github.com/badarsh2) <br/>
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+```
