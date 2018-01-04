@@ -1,0 +1,38 @@
+#+TITLE: kisaragi/vocab Structure
+
+* display functions
+- vocab -> write word and definition to stdout
+
+#+BEGIN_SRC bash
+$ vocab
+単語: hello
+意味: A word used for greeting
+#+END_SRC
+
+- vocab-notification -> send a notification with word and definition
+
+#+BEGIN_SRC bash
+$ vocab-notification
+-> (notification (title "hello") (body "A word used for greeting"))
+#+END_SRC
+
+* database format
+
+#+BEGIN_SRC json
+{
+    "hello" : {
+        "language" : "en",
+        "definitions" : [
+            "A word used for greeting"
+        ]
+    },
+    "単語" : {
+        "language" : "ja",
+        "definitions" : [
+            "文法上、意味・職能をもった最小の言語単位。"
+        ]
+    }
+}
+#+END_SRC
+* daemon
+runs a display function every so often
